@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\ContactFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,13 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', [HelloController::class,'index']);
+Route::get('/', [HelloController::class, 'index'])->name('hello.index');
+
+Route::get('/inquiry', [HelloController::class, 'inquiry'])->name('inquiry.index');
+Route::get('/send-inquiry', [ContactFormController::class, 'sendInquiry'])->name('send.inquiry');
+Route::post('/send-inquiry', [ContactFormController::class, 'sendInquiry'])->name('send.inquiry');
+
+Route::get('/', [HelloController::class, 'index'])->name('hello.index');
+Route::get('/recruit', 'App\Http\Controllers\HelloController@recruit')->name('recruit.index');
+
+
