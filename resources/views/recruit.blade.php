@@ -8,7 +8,7 @@
         <script src="{{ asset('js/common.js') }}"></script>
         <link rel="icon" href="/img/fastline_logo.png" type="image/x-icon">
 
-        <title>FAST LINE</title>
+        <title>ファストライン合同会社</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -58,7 +58,7 @@
             <div class="job-about-detail">
                 <div class="job-card">
                     <h3 class="job-card-title">
-                        FAST LINE
+                        ファストライン　合同会社
                     </h3>
                     <div class="job-card-detail">
                         <p class="">現在採用情報はありません。</p>

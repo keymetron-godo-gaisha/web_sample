@@ -8,7 +8,7 @@
         <script src="{{ asset('js/common.js') }}"></script>
         <link rel="icon" href="/img/fastline_logo.png" type="image/x-icon">
 
-        <title>FAST LINE</title>
+        <title>ファストライン合同会社</title>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -157,7 +157,7 @@
             <div class="required-privacy">
                 <br>
                 <h2 class="required-privacy-title">プライバシーポリシー</h2>
-                <p>FAST LINE以下「当社」）は、個人情報を適切に取り扱うことが社会的責務であると認識しております。
+                <p>ファストライン合同会社以下「当社」）は、個人情報を適切に取り扱うことが社会的責務であると認識しております。
                     当社は、個人情報に関する法令を遵守し、個人情報の適切な取り扱いを実現致します。</p>
                 <br>
                 <section>
@@ -168,33 +168,33 @@
                 </section>
                 <br>
                 <section>
-                    <h3>個人情報の利用目的</h3>
+                    <h3 class="required-privacy-subtitle">個人情報の利用目的</h3>
                     <p>当社は個人情報の取扱にあたっては利用目的をできる限り特定し、ご本人の事前の同意なしに、
                         利用目的を超えて個人情報を取得、利用しません。また、偽り、その他不正の手段により個人情報を取得しません。</p>
                 </section>
                 <br>
                 <section>
-                    <h3>個人情報の管理</h3>
+                    <h3 class="required-privacy-subtitle">個人情報の管理</h3>
                     <p>当社は取得した個人情報の漏えい、紛失、改ざん等の防止のため適切な措置を講じます。</p>
                 </section>
                 <br>
                 <section>
-                    <h3>個人情報保護の適用範囲</h3>
+                    <h3 class="required-privacy-subtitle">個人情報保護の適用範囲</h3>
                     <p>本プライバシーポリシーは、当ウェブサイト（アドレス.comドメイン）においてのみ適用されます。</p>
                 </section>
                 <br>
                 <section>
-                    <h3>個人情報の苦情、相談</h3>
+                    <h3 class="required-privacy-subtitle">個人情報の苦情、相談</h3>
                     <p>当社は、ご本人から個人情報の開示、訂正、追加、削除または利用停止を求められた場合には、法令等にしたがい適切な措置を講じます。</p>
                 </section>
                 <br>
                 <section>
-                    <h3>お問い合わせ窓口</h3>
+                    <h3 class="required-privacy-subtitle">お問い合わせ窓口</h3>
                     <p>個人情報のお取り扱いに関するお問い合わせは、下記担当までお願い致します。
                     <br>
                     〒xxx-xxx　住所
                     <br>
-                    FAST LINEプライバシーポリシー管理担当
+                    ファストライン合同会社プライバシーポリシー管理担当
                     <br>
                     メールアドレス
                     </p>

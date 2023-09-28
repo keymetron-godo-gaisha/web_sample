@@ -174,15 +174,10 @@ a {
 /ここから会社概要
 /*----------------------------*/
 .index-about {
-    /* padding: 140px 0; */
-    /* display: flex; */
     margin: 40px;
     background-color: #d8dce5;
 }
 .index_bg{
-    /* background-color: #ffffff; */
-    /* background-image: url(/img/recruit1_bg.png); */
-    /* height: 450px; */
     background-position: center center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -191,18 +186,11 @@ a {
     max-width: 51.32%;
     order: 2;
 }
-.index-about-wrapper {
-    /* margin: 0 auto;
-    width: 1140px;
-    padding: 0 30px; */
-}
 .index-about-content {
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     padding: 40px 3.57vw 30px 3.57vw;
     flex: 1 1 auto;
-    /* width: 100%; */
     max-width: 100%;
     order: 1;
 }
@@ -218,7 +206,6 @@ a {
 
 .index-about-image-item{
     background-position: center center;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     flex: 0 0 51.32%;
     width: 51.32%;
@@ -256,6 +243,61 @@ th {
     -webkit-animation: fade-in 1s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: fade-in 1s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+table {
+    border-collapse: collapse; /* ボーダーが重ならないように設定 */
+    width: 90%; /* 表の幅を100%に設定 */
+}
+
+th, td {
+    border: 1px solid #000; /* ボーダーの幅、スタイル、色を設定 */
+    padding: 8px; /* セル内の余白を設定 */
+}
+
+th {
+    background-color: #f2f2f2; /* ヘッダーセルの背景色を設定 */
+}
+table{
+    border-collapse: collapse;
+  }
+  
+  table tr{
+    border-bottom: solid 2px white;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table th{
+    position: relative;
+    text-align: left;
+    width: 40%;
+    background-color: #092f8c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #092f8c;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    /* background-color: #eee; */
+    padding: 10px 0;
+  }
 /* <!-- ▲トップ画面 --> */
 /* <!-- ▼製品紹介 --> */
 .products_index{
@@ -320,8 +362,8 @@ th {
 }
 .products_bg{
     /* background-color: #ffffff; */
-    background-image: url(/img/todokippu.png);
-    /* height: 450px; */
+    background-image: url(/img/todokippu1.png);
+     height: 450px; 
     background-position: center center;
     /* background-repeat: no-repeat; */
     background-size: cover;

@@ -8,7 +8,7 @@
         <script src="{{ asset('js/product_info.js') }}"></script>
         <script src="{{ asset('js/info_more.js') }}"></script>
         <script src="{{ asset('js/common.js') }}"></script>
-        <title>FAST LINE</title>
+        <title>ファストライン合同会社</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
           $(document).ready(function() {
@@ -169,64 +169,57 @@
 <!-- ▼会社概要 -->
 <a id="index-about"></a>
     <div class="index-about">
-        <div class="index_bg"></div>
           <div class="index-about-content">
             <h2 class="index-about-heading">
                 会社概要
             </h2>
             <P class="index-about-detail">
             <table>
-        <!-- <tr>
-            <th>列1の見出し</th>
-            <th>列2の見出し</th>
-        </tr> -->
-        <tr>
-            <td>会社名</td>
-            <td>FASTLINE</td>
-        </tr>
-        <tr>
-            <td>所在地</td>
-            <td>〒xxx-xxxx  住所</td>
-        </tr>
-        <tr>
-            <td>代表者</td>
-            <td>代表取締役　名前</td>
-        </tr>
-        <tr>
-            <td>事業内容</td>
-            <td>○○</td>
-        </tr>
-        <tr>
-            <td>電話番号</td>
-            <td>xx-xxxx-xxxx</td>
-        </tr>
-        <tr>
-            <td>URL</td>
-            <td>○○</td>
-        </tr>
-        <tr>
-            <td>メールアドレス</td>
-            <td>○○</td>
-        </tr>
-        <tr>
-            <td>資本金</td>
-            <td>¥¥¥¥</td>
-        </tr>
-        <tr>
-            <td>取引銀行</td>
-            <td>○○</td>
-        </tr>
-        <tr>
-            <td>取引先企業名</td>
-            <td>○○</td>
-        </tr>
-        <tr>
-            <td>設立年月</td>
-            <td>○○</td>
-        </tr>
-        
-        <!-- 追加の行を必要に応じて続けることができます -->
-    </table>
+              <tr>
+                  <th>会社名</th>
+                  <td>FASTLINE</td>
+              </tr>
+              <tr>
+                  <th>所在地</th>
+                  <td>〒xxx-xxxx  住所</td>
+              </tr>
+              <tr>
+                  <th>代表者</th>
+                  <td>代表取締役　名前</td>
+              </tr>
+              <tr>
+                  <th>事業内容</th>
+                  <td>○○</td>
+              </tr>
+              <tr>
+                  <th>電話番号</th>
+                  <td>xx-xxxx-xxxx</td>
+              </tr>
+              <tr>
+                  <th>URL</th>
+                  <td>○○</td>
+              </tr>
+              <tr>
+                  <th>メールアドレス</th>
+                  <td>○○</td>
+              </tr>
+              <tr>
+                  <th>資本金</th>
+                  <td>¥¥¥¥</td>
+              </tr>
+              <tr>
+                  <th>取引銀行</th>
+                  <td>○○</td>
+              </tr>
+              <tr>
+                  <th>取引先企業名</th>
+                  <td>○○</td>
+              </tr>
+              <tr>
+                  <th>設立年月</th>
+                  <td>○○</td>
+              </tr>
+            </table>
             </p>
           </div>
     </div>
@@ -267,14 +260,10 @@
           <div class="products-about-content">
             <h2 class="products-about-heading">とどきっぷ</h2>
             <P class="products-about-detail">
-              詳細
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+                とどきっぷとは、全国の新幹線・特急列車のきっぷが
+                ネットで購入できる便利なサイトです！
+                会員登録不要！選べるお支払方法！<br>
+                購入したきっぷはご指定した住所へお届けします！
             </p>
           </div>
         </div>

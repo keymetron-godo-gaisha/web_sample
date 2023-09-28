@@ -16,16 +16,16 @@
     <div class="footer_bottom">
         <div class="in_bdy">
             <h5>株式会社⚪︎⚪︎</h5>
-        <div class="address">
-            <p>住所記入 <br>ビル名記入</p>
-            <p>Tel. </p>
-        </div>
+          <div class="address">
+              <p>住所記入 <br>ビル名記入</p>
+              <p>Tel. </p>
+          </div>
             <!-- <div class="copyright">Copyright © 2018 EKICHIKE</div> -->
         </div>
     </div>
   </footer>
 </div>
 <!-- ▲フッター -->
- </body>
+</body>
 </html>
 @endsection
