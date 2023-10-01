@@ -177,23 +177,23 @@
             <table>
               <tr>
                   <th>会社名</th>
-                  <td>FASTLINE</td>
+                  <td>ファストライン合同会社</td>
               </tr>
               <tr>
                   <th>所在地</th>
-                  <td>〒xxx-xxxx  住所</td>
+                  <td>〒171-0014   東京都豊島区池袋2-17-8</td>
               </tr>
               <tr>
                   <th>代表者</th>
-                  <td>代表取締役　名前</td>
+                  <td>代表取締役　楊　波</td>
               </tr>
               <tr>
                   <th>事業内容</th>
-                  <td>○○</td>
+                  <td>小売業</td>
               </tr>
               <tr>
                   <th>電話番号</th>
-                  <td>xx-xxxx-xxxx</td>
+                  <td>080-1742-0698</td>
               </tr>
               <tr>
                   <th>URL</th>
@@ -201,23 +201,15 @@
               </tr>
               <tr>
                   <th>メールアドレス</th>
-                  <td>○○</td>
+                  <td>fastline.llcompany@gmail.com</td>
               </tr>
               <tr>
                   <th>資本金</th>
-                  <td>¥¥¥¥</td>
-              </tr>
-              <tr>
-                  <th>取引銀行</th>
-                  <td>○○</td>
-              </tr>
-              <tr>
-                  <th>取引先企業名</th>
-                  <td>○○</td>
+                  <td>¥500,000</td>
               </tr>
               <tr>
                   <th>設立年月</th>
-                  <td>○○</td>
+                  <td>令和5年4月3日</td>
               </tr>
             </table>
             </p>
@@ -260,11 +252,17 @@
           <div class="products-about-content">
             <h2 class="products-about-heading">とどきっぷ</h2>
             <P class="products-about-detail">
-                とどきっぷとは、全国の新幹線・特急列車のきっぷが
-                ネットで購入できる便利なサイトです！
-                会員登録不要！選べるお支払方法！<br>
-                購入したきっぷはご指定した住所へお届けします！
+                「とどきっぷ」は、全国の新幹線・特急列車のきっぷを手軽に購入できる便利なサイトです！<br>
+                  会員登録は一切不要！選べるお支払方法！<br>
+                  購入したきっぷは、指定の住所へお届けいたします。<br>
+                  いつでもどこでも、簡単に予約できます。<br>
+                「とどきっぷ」を利用して、快適でスムーズな旅行を楽しんでください！<br>
+                当サイトでのご予約は、新幹線や特急列車の旅をさらに楽しいものにします！
             </p>
+            <p class="recruit-detail-more">
+              <a href="https://todokippu.com/top.php" class="recruit-detail-action">
+              <span class="products-action-push">詳しくはこちらから！</span>
+              </a>
           </div>
         </div>
     </div>
@@ -385,10 +383,10 @@
         <div class="footer_menu">
           <div class="footer_menu_service">
             <!-- <img class="footer-logo-img" src="/img/fastline_logo.png"> -->
-            <h5>FAST LINE</h5>
+            <h5>ファストライン合同会社</h5>
                 <div class="address">
-                <p>〒xxx-xxx <br>xx県xx市xxx町xxxx-x-x</p>
-                        <p>Tel：xxx-xxxx </p>
+                <p>〒171-0014 <br>東京都豊島区池袋2-17-8</p>
+                        <p>Tel：080-1742-0698 </p>
                 </div>
           </div>
           <!-- <div class="footer_rigth"> -->
@@ -403,7 +401,6 @@
               <!-- <div class="footer_bottom">
                   <ul class="nav"> -->
                       <li class="footer_text"><a class="footer_a_text" href="#enquiry_index">お問い合わせ</a></li>
-                      <li class="footer_text"><a class="footer_a_text" href="privacy-policy.html">個人情報保護方針について</a></li>
                   </ul>
               </div>
               </div>
