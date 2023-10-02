@@ -31,7 +31,7 @@
           <a class="nav-link js-nav-link" href="/#company">会社概要</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link js-nav-link" href="/#products_index">製品について</a>
+          <a class="nav-link js-nav-link" href="/#products_index">弊社サービス</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link js-nav-link" href="/#index-recruit">採用情報</a>
@@ -43,7 +43,7 @@
     </nav>
     <a class="header-nav-img show-pc" href="http://127.0.0.1:8000/hello"> </a>
   </div>
-</header> 
+</header>
 <div class="vision">
     <div class="vision-mainpic">
         <div class="vision-maintext">
