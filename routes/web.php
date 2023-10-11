@@ -17,7 +17,7 @@ use App\Http\Controllers\ContactFormController;
 
 Route::get('/', function () {
     return view('hello');
-});
+})->name('top');
 
 Route::get('/inquiry', [HelloController::class, 'inquiry'])->name('inquiry.index');
 Route::get('/send-inquiry', [ContactFormController::class, 'sendInquiry'])->name('send.inquiry');

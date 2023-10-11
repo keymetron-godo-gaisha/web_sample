@@ -32,6 +32,7 @@ class ContactFormMail extends Mailable
     public function build()
     {
         return $this->view('emails.contact') // メールのビューを指定します
-                    ->subject('お問い合わせフォームからのメッセージ'); // メールの件名を設定します
+                    ->subject('お問い合わせがありました'); // メールの件名
+
     }
 }

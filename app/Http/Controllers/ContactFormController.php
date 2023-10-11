@@ -26,7 +26,7 @@ class ContactFormController extends Controller
         Mail::to('fastline.llcompany@gmail.com')->send(new ContactFormMail($data));
 
         // メール送信後のリダイレクト
-        return redirect()->route('hello.index'); // 'top' を実際のトップ画面のルート名に変更
+        return redirect()->route('top'); // 'top' を実際のトップ画面のルート名に変更
 
         // メール送信後の処理を追加できます
     }
