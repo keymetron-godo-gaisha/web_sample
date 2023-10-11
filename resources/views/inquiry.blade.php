@@ -3,7 +3,7 @@
     <head>
         @include('headList')
         <title>ファストライン合同会社</title>
-
+        <meta name="description" content="自社サービスに関することなどお気軽にお問い合わせください。">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     </head>
