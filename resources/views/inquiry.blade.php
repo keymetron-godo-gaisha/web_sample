@@ -49,7 +49,7 @@
                                 <span class="lastname-required">*<span>
                             </label>
                             <div class="required-input">
-                                <input class="input-text" type="text" name="lastname" required>
+                                <input class="input-text required" type="text" name="lastname" required>
                             </div>
                         </div>
                         <div class="inquiry-firstname">
@@ -58,7 +58,7 @@
                                 <span class="firstname-required">*<span>
                             </label>
                             <div class="required-input">
-                                <input class="input-text" type="text" name="firstname" required>
+                                <input class="input-text required" type="text" name="firstname" required>
                             </div>
                         </div>
                         <div class="inquiry-lastname">
@@ -85,7 +85,7 @@
                                 <span class="lastname-required">*<span>
                             </label>
                             <div class="required-input">
-                                <input class="input-text" type="email" name="email" required>
+                                <input class="input-text required" type="email" name="email" required>
                             </div>
                         </div>
                         <div class="inquiry-firstname">
@@ -100,9 +100,10 @@
                         <div class="required-message">
                             <label class="label-message">
                                 <span>備考欄</span>
+                                <span class="lastname-required">*<span>
                             </label>
                             <div class="required-input-message">
-                                <input class="input-text-message" type="message" name="message">
+                                <textarea class="input-text-message required" type="message" name="message"cols="30" rows="10" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@
                         var isValid = true;
 
                         // 必須フィールドをチェック
-                        $(".required-input input").each(function () {
+                        $(".required").each(function () {
                             if (!$(this).val()) {
                                 isValid = false;
                                 $(this).addClass("error");
