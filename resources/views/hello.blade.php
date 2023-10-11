@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style_pc.css" rel="stylesheet" media="screen and (min-width: 768px)">
         <link href="/css/style_sp.css" rel="stylesheet" media="screen and (max-width: 767px)">
-        <script src="{{ asset('js/product_info.js') }}"></script>
+        {{-- <script src="{{ asset('js/product_info.js') }}"></script> --}}
         <script src="{{ asset('js/info_more.js') }}"></script>
         <script src="{{ asset('js/common.js') }}"></script>
         <title>ファストライン合同会社</title>
@@ -30,198 +30,128 @@
 
     </head>
     <body>
-    @yield('header')
         <div class="wrapper">
     <header class="header js-header">
-    <div class="header-logo">
-      <a href="http://127.0.0.1:8000/hello" class="header-logo-link"> 
-      </a>
-      <img class="header-logo-img" src="/img/fastline_logo.png">
-    </div>
-    <div class="header-content">
-  <div class="header-nav">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item ">
-          <a class="nav-link js-nav-link" href="#index-about">会社概要</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link js-nav-link" href="#products_index">製品について</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link js-nav-link" href="#index-recruit">採用情報</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link js-nav-link" href="#enquiry_index">お問い合わせ</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header> 
+        <div class="header-logo">
+            <a href="/" class="header-logo-link">
+                <img class="header-logo-img" src="/img/fastline_logo.png">
+            </a>
+        </div>
+
+        <div class="header-nav">
+            <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item ">
+                <a class="nav-link js-nav-link" href="#index-about">会社概要</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link js-nav-link" href="#products_index">製品について</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link js-nav-link" href="#index-recruit">採用情報</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link js-nav-link" href="#enquiry_index">お問い合わせ</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
 
 <main>
 <!-- ▼トップ画面 -->
 <div class="main_toppic"><h2 class="main_title">巡る季節が、旅を彩る。</h2></div>
 <!-- ▲トップ画面 -->
-<!-- ▼企業概念 -->
-<div class="index-management">
-          <div class="index-management-content">
-            <h2 class="index-management-title">経営理念</h2>
-            <P class="index-management-detail">「人と人との出会い」、
-              そこから生まれる「コミュニケーション」を大切にし、より豊かな未来の発展に貢献します。</p>
-            <P class="index-management-detail2"> 
-              私たちは、人との繋がりの中で共に成長し、夢あふれる未来を創り上げていきます。</p>
-          </div>
+    <!-- ▼企業概念 -->
+    <div class="index-management">
+        <div class="index-management-content">
+        <h2 class="index-management-title">経営理念</h2>
+        <P class="index-management-detail">「人と人との出会い」、
+            そこから生まれる「コミュニケーション」を大切にし、より豊かな未来の発展に貢献します。</p>
+        <P class="index-management-detail2">
+            私たちは、人との繋がりの中で共に成長し、夢あふれる未来を創り上げていきます。</p>
+        </div>
     </div>
-          </div>
+    <!-- ▲企業概念 -->
+    <!-- ▼新着情報 -->
+    <div id="info" class="section">
+        <div class="in_bdy">
+            <h2>■NEWS</h2>
+            <ul class="new_info">
+                <li class="info_list">
+                    <div class="info_title">
+                        <div class="schedule">2023/11/1</div>
+                        <div class="info_detail">
+                            <details class="qa-006">
+                            <summary>新幹線予約サイト「とどっきっぷ」リリース！</summary>
+                            <p>購入後すぐにチケットが手元に届く新幹線代理購入サービス「とどきっぷ」をリリースいたしました。<br>
+                            ▼ 業界最安値！操作もシンプルで簡単！<br>
+                            <a href="https://todokippu.com/top.php">詳しくはこちら</a>
+                            </p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="info_title">
+                        <div class="schedule">2023/10/1</div>
+                        <div class="info_detail">
+                            <details class="qa-006">
+                            <summary>サイトを公開しました</summary>
+                            <p>ファストライン合同会社のHPを公開いたしました。今後自社の新サービスや採用情報をアップデート予定です。</p>
+                            </details>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div> 
-<!-- ▲企業概念 -->
-<!-- ▼新着情報 -->
-<div id="info">
-  <div class="in_bdy">
-    <h2>■NEWS</h2>
-    <ul class="new_info">
-      <li class="info_list">
-        <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-          <div class="info_detail">
-            <details class="qa-006">
-              <summary>システムメンテナンス情報</summary>
-              <p>■定例システムメンテナンス（毎日）
-                23時50分～0時10分、1時50分～5時00分
-
-
-                ■臨時システムメンテナンス
-                2023年
-                7月27日（木）23時50分～7月28日（金）5時00分
-                7月31日（月）23時50分～8月 1日（火）5時00分
-               </p>
-            </details>
-          </div>
-        </div>
-        <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-          <div class="info_detail">
-            <details class="qa-006">
-              <summary>夏季休業期間のキャンセルのお問合せにつきまして</summary>
-              <p>夏季休業期間のキャンセルのお問合せにつきましては、チケットと一緒に同封させていただきました説明に従ってキャンセル手続きをお願いいたします。
-                休業期間中につきましてはお電話での対応が出来ませんのでご了承願います。
-                またメールにつきましても8月16日以降に対応させていただきますのでどうぞよろしくお願いいたします。</p>
-            </details>
-          </div>
-        </div>
-        <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-          <div class="info_detail">
-            <details class="qa-006">
-              <summary>夏季休業のお知らせ</summary>
-              <p>弊社は8月10日～8月15日まで夏季休業期間となります。この期間にお申込みをいただきましたご注文につきましては8月16日以降のメールでのご案内、及び発送となります。ご了承願います。</p>
-            </details>
-            
-          </div>
-        </div>
-        <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-            <div class="info_detail">
-              <details class="qa-006">
-                <summary>配送先の住所に建物名(マンション名・アパート名)の記載をお願いいたします。</summary>
-                <p>
-                  弊社よりレターパック、ヤマト宅急便で配送させていただいておりますが、住所に建物名(マンション名・アパート名)の記載なく、配送先が不明で戻って来てしまうケースが増えてきております。お手数ではございますが配送先住所は必ず建物名・部屋番号(マンション・アパートなど)がある場合は必ず記載願います。
+    </div>
+    <!-- ▲新着情報 -->
+    <!-- ▼会社概要 -->
+        <div class="index-about section" id="index-about">
+            <div class="index-about-content">
+                <h2 class="index-about-heading">
+                    会社概要
+                </h2>
+                <p class="index-about-detail">
+                    <table>
+                    <tr>
+                        <th>会社名</th>
+                        <td>ファストライン合同会社</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒171-0014   東京都豊島区池袋2-17-8</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>楊　波</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>小売業</td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td>080-1742-0698</td>
+                    </tr>
+                    <tr>
+                        <th>メールアドレス</th>
+                        <td>fastline.llcompany@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>500,000円</td>
+                    </tr>
+                    <tr>
+                        <th>設立年月</th>
+                        <td>令和5年4月3日</td>
+                    </tr>
+                    </table>
                 </p>
-              </details>
             </div>
-          </div>
-          <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-          <div class="info_detail">
-            <details class="qa-006">
-              <summary>夏季休業のお知らせ</summary>
-              <p>弊社は8月10日～8月15日まで夏季休業期間となります。この期間にお申込みをいただきましたご注文につきましては8月16日以降のメールでのご案内、及び発送となります。ご了承願います。</p>
-            </details>
-            
-          </div>
         </div>
-        <div class="info_title">
-          <div class="schedule">2023/8/1</div>
-          <div class="info_detail">
-            <details class="qa-006">
-              <summary>夏季休業のお知らせ</summary>
-              <p>弊社は8月10日～8月15日まで夏季休業期間となります。この期間にお申込みをいただきましたご注文につきましては8月16日以降のメールでのご案内、及び発送となります。ご了承願います。</p>
-            </details>
-          </div>
-        </div>
-        <div id="load-more-container">
-           <button id="load-more-button">もっと見る</button>
-           <button id="close-more-button" style="display: none;">閉じる</button>
-        </div>
-        </div>
-        </li>
-        </ul>
-        <!-- <div id="load-more-container">
-           <button id="load-more-button">もっと見る</button>
-           <button id="close-more-button" style="display: none;">閉じる</button>
-        </div> -->
-      
-      </div>
-    </div>
-<!-- ▲新着情報 -->
-<!-- ▼会社概要 -->
-<a id="index-about"></a>
-    <div class="index-about">
-          <div class="index-about-content">
-            <h2 class="index-about-heading">
-                会社概要
-            </h2>
-            <P class="index-about-detail">
-            <table>
-              <tr>
-                  <th>会社名</th>
-                  <td>ファストライン合同会社</td>
-              </tr>
-              <tr>
-                  <th>所在地</th>
-                  <td>〒171-0014   東京都豊島区池袋2-17-8</td>
-              </tr>
-              <tr>
-                  <th>代表者</th>
-                  <td>代表取締役　楊　波</td>
-              </tr>
-              <tr>
-                  <th>事業内容</th>
-                  <td>小売業</td>
-              </tr>
-              <tr>
-                  <th>電話番号</th>
-                  <td>080-1742-0698</td>
-              </tr>
-              <tr>
-                  <th>URL</th>
-                  <td>○○</td>
-              </tr>
-              <tr>
-                  <th>メールアドレス</th>
-                  <td>fastline.llcompany@gmail.com</td>
-              </tr>
-              <tr>
-                  <th>資本金</th>
-                  <td>¥500,000</td>
-              </tr>
-              <tr>
-                  <th>設立年月</th>
-                  <td>令和5年4月3日</td>
-              </tr>
-            </table>
-            </p>
-          </div>
-    </div>
-          </div>
-        </div>
-    </div> 
-<!-- ▲会社概要 -->
-<!-- ▼採用情報 -->
-<a id="index-recruit"></a>
-<div class="index-recruit">
+    <!-- ▲会社概要 -->
+    <!-- ▼採用情報 -->
+    <div class="index-recruit section" id="index-recruit">
         <div class="recruit_bg"></div>
           <div class="index-recruit-content">
             <h2 class="index-recruit-heading">
@@ -237,37 +167,32 @@
             </p>
           </div>
     </div>
-          </div>
-        </div>
-    </div> 
-<!-- ▲採用情報 -->
-<!-- ▼商品紹介 -->
-<a id="products_index"></a>
-<div class="products_index">
-  <div class="products">
-    <h1 class="products_index_title" style="translate: none;rotate: none;scale: none;transform: translate(0px, 0px);opacity: 1;">
-      ■製品について</h1>
-    <div class="products-about">
-        <div class="products_bg"></div>
-          <div class="products-about-content">
-            <h2 class="products-about-heading">とどきっぷ</h2>
-            <P class="products-about-detail">
-                「とどきっぷ」は、全国の新幹線・特急列車のきっぷを手軽に購入できる便利なサイトです！<br>
-                  会員登録は一切不要！選べるお支払方法！<br>
-                  購入したきっぷは、指定の住所へお届けいたします。<br>
-                  いつでもどこでも、簡単に予約できます。<br>
-                「とどきっぷ」を利用して、快適でスムーズな旅行を楽しんでください！<br>
-                当サイトでのご予約は、新幹線や特急列車の旅をさらに楽しいものにします！
-            </p>
-            <p class="recruit-detail-more">
-              <a href="https://todokippu.com/top.php" class="recruit-detail-action">
-              <span class="products-action-push">詳しくはこちらから！</span>
-              </a>
-          </div>
+    <!-- ▲採用情報 -->
+    <!-- ▼商品紹介 -->
+    <div class="products_index section" id="products_index">
+        <div class="products">
+        <h1 class="products_index_title" style="translate: none;rotate: none;scale: none;transform: translate(0px, 0px);opacity: 1;">
+        ■製品について</h1>
+        <div class="products-about">
+            <div class="products_bg"></div>
+            <div class="products-about-content">
+                <h2 class="products-about-heading">とどきっぷ</h2>
+                <P class="products-about-detail">
+                    「とどきっぷ」は、全国の新幹線・特急列車のきっぷを手軽に購入できる便利なサイトです！<br>
+                    会員登録は一切不要！選べるお支払方法！<br>
+                    購入したきっぷは、指定の住所へお届けいたします。<br>
+                    いつでもどこでも、簡単に予約できます。<br>
+                    「とどきっぷ」を利用して、快適でスムーズな旅行を楽しんでください！<br>
+                    当サイトでのご予約は、新幹線や特急列車の旅をさらに楽しいものにします！
+                </p>
+                <p class="recruit-detail-more">
+                <a href="https://todokippu.com/top.php" class="recruit-detail-action">
+                <span class="products-action-push">詳しくはこちらから！</span>
+                </a>
+            </div>
+            </div>
         </div>
     </div>
-        </div>
-    </div> 
     <!-- <div class="products_index_detail">
       <div class="products_detail_format">
         <div class="products_detail">
@@ -347,70 +272,28 @@
             <br>
             <br>
           </a>
-        </div>  
+        </div>
       </div>
     </div>
         <div class="product_slide">
           <button id="prev-button">前へ</button>
           <button id="next-button">次へ</button>
         </div> -->
-  </div>
-</div>
-<!-- ▲商品紹介 -->
-<!-- ▼お問い合わせフォーム -->
-<a id="enquiry_index"></a>
-<div class="enquiry_index">
-  <div class="enquiry">
-    <p class="enquiry_text">お問い合わせフォーム</p>
-      <div class="enquiry_content">
-        <a href="{{ route('inquiry.index') }}" class="enquiry_contact">
-          <span class="enquiry_title">Contact</span>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-<!-- ▲お問い合わせフォーム -->
-    </div>
-    </div>
-    </div>
-</main>
-<!-- ▼フッター -->
-<footer class="footer">
-    <div class="footer_frame">
-      <div class="footer_company">
-        <div class="footer_menu">
-          <div class="footer_menu_service">
-            <!-- <img class="footer-logo-img" src="/img/fastline_logo.png"> -->
-            <h5>ファストライン合同会社</h5>
-                <div class="address">
-                <p>〒171-0014 <br>東京都豊島区池袋2-17-8</p>
-                        <p>Tel：080-1742-0698 </p>
-                </div>
-          </div>
-          <!-- <div class="footer_rigth"> -->
-              <div class="footer_top">
-                  <ul class="nav">
-                      <li class="footer_text"><a class="footer_a_text" href="#index-about">会社概要</a></li>
-                      <li class="footer_text"><a class="footer_a_text" href="#products_index">製品について</a></li>
-                      <li class="footer_text"><a class="footer_a_text" href="#index-recruit">採用情報</a></li>
-                  <!-- </ul>
-              </div> -->
-
-              <!-- <div class="footer_bottom">
-                  <ul class="nav"> -->
-                      <li class="footer_text"><a class="footer_a_text" href="#enquiry_index">お問い合わせ</a></li>
-                  </ul>
-              </div>
-              </div>
-          <!-- </div> -->
-          <!-- <div class="copyright">Copyright © 2023 TABILIA</div> -->
+    <!-- ▲商品紹介 -->
+    <!-- ▼お問い合わせフォーム -->
+    <div class="enquiry_index section" id="enquiry_index">
+        <div class="enquiry">
+            <p class="enquiry_text">お問い合わせフォーム</p>
+            <div class="enquiry_content">
+                <a href="{{ route('inquiry.index') }}" class="enquiry_contact">
+                <span class="enquiry_title">Contact</span>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-</footer>
-<!-- ▲フッター -->
-  </div>
- </body>
+    <!-- ▲お問い合わせフォーム -->
+        </main>
+            @include('footer')
+        </div>
+    </body>
 </html>

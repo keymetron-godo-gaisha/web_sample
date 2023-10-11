@@ -19,9 +19,9 @@
         <div class="wrapper">
     <header class="header js-header">
     <div class="header-logo">
-      <a href="http://127.0.0.1:8000/hello" class="header-logo-link">
-      </a>
-      <img class="header-logo-img" src="/img/fastline_logo.png">
+        <a href="/" class="header-logo-link">
+            <img class="header-logo-img" src="/img/fastline_logo.png">
+        </a>
     </div>
     <div class="header-content show-pc">
   <div class="header-nav">
@@ -41,7 +41,6 @@
         </li>
       </ul>
     </nav>
-    <a class="header-nav-img show-pc" href="http://127.0.0.1:8000/hello"> </a>
   </div>
 </header>
 <div class="vision">
@@ -71,39 +70,6 @@
         </div>
     </div>
 </div>
-<!-- ▼フッター -->
-<footer class="footer">
-    <div class="footer_frame">
-      <div class="footer_company">
-        <div class="footer_menu">
-          <div class="footer_menu_service">
-            <!-- <img class="footer-logo-img" src="/img/fastline_logo.png"> -->
-            <h5>ファストライン合同会社</h5>
-                <div class="address">
-                <p>〒171-0014 <br>東京都豊島区池袋2-17-8</p>
-                        <p>Tel：080-1742-0698 </p>
-                </div>
-          </div>
-          <!-- <div class="footer_rigth"> -->
-              <div class="footer_top">
-                  <ul class="nav">
-                      <li class="footer_text"><a class="footer_a_text" href="#index-about">会社概要</a></li>
-                      <li class="footer_text"><a class="footer_a_text" href="#products_index">製品について</a></li>
-                      <li class="footer_text"><a class="footer_a_text" href="#index-recruit">採用情報</a></li>
-                  <!-- </ul>
-              </div> -->
-
-              <!-- <div class="footer_bottom">
-                  <ul class="nav"> -->
-                      <li class="footer_text"><a class="footer_a_text" href="#enquiry_index">お問い合わせ</a></li>
-                  </ul>
-              </div>
-          <!-- </div> -->
-          <!-- <div class="copyright">Copyright © 2023 TABILIA</div> -->
-        </div>
-      </div>
-    </div>
-</footer>
-<!-- ▲フッター -->
+@include('footer')
 </body>
 </html>

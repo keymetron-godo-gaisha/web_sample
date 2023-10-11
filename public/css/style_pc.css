@@ -10,10 +10,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     /* font: inherit; */
     vertical-align: baseline;
 }
+
 /* body{
     min-width: 768px
 } */
-
+a {
+    text-decoration: none;
+}
+/* .section{
+    margin-top: -120px;
+    padding-top: 120px;
+} */
 /*----------------------------
 /ここからヘッター
 /*----------------------------*/
@@ -66,18 +73,16 @@ ol, ul {
     list-style: none;
 }
 .nav-item {
-    margin: 0 0 0 28px;
+    margin: 0 20px;
     display: inline-block;
     position: relative;
 }
 .nav-link {
     font-size: 16px;
-    /* color: #37383C; */
-    /* color: #fff; */
+    color: #54555c;
     font-weight: 600;
 }
-a {
-    text-decoration: none;
+.nav-link:hover{
     color: #37383C;
 }
 .banner {
@@ -149,7 +154,7 @@ a {
 /ここから企業理念
 /*----------------------------*/
 .index-management{
-    padding: 30px 0 65px 0; 
+    padding: 30px 0 65px 0;
     /* display: flex; */
     margin: 40px;
     background-color: #d8dce5;
@@ -259,15 +264,15 @@ th {
 table{
     border-collapse: collapse;
   }
-  
+
   table tr{
     border-bottom: solid 2px white;
   }
-  
+
   table tr:last-child{
     border-bottom: none;
   }
-  
+
   table th{
     position: relative;
     text-align: left;
@@ -277,7 +282,7 @@ table{
     text-align: center;
     padding: 10px 0;
   }
-  
+
   table th:after{
     display: block;
     content: "";
@@ -290,7 +295,7 @@ table{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
-  
+
   table td{
     text-align: left;
     width: 70%;
@@ -363,7 +368,7 @@ table{
 .products_bg{
     /* background-color: #ffffff; */
     background-image: url(/img/todokippu1.png);
-     height: 450px; 
+     height: 450px;
     background-position: center center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -449,7 +454,7 @@ table{
 #info .in_bdy {
     /* width: 980px; */
     margin: 0 auto;
-    
+
 }#info .in_bdy h2 {
     font-size: 24px;
     color: #092f8c;
@@ -518,7 +523,7 @@ table{
     position: relative; /* 要素を相対位置に設定 */
     margin-top: 37px;
   }
-  
+
   #load-more-button, #close-more-button {
     background-color: gray;
     color: white;
@@ -532,7 +537,7 @@ table{
     transition: background-color 0.3s;
     border-radius: 4px; /* ボタンを角丸にする */
   }
-  
+
   #load-more-button:hover, #close-more-button:hover {
     background-color: darkgray;
   }
@@ -544,7 +549,7 @@ table{
     cursor: pointer; /* マウスポインターを手の形に変更 */
     border-radius: 4px; /* ボタンを角丸にする */
   }
-  
+
   #load-more-button:hover {
     background-color: #606060; /* マウスオーバー時の背景色を少し暗めにする */
   }
@@ -704,7 +709,7 @@ footer ul{
   }
   footer ul li a{
     line-height: 1;
-    color: #fff;
+    color: rgb(218, 218, 218);
     text-decoration: none;
   }
   footer .footer_bottom{
@@ -822,7 +827,7 @@ footer{
     padding: 16px;
     font-size: 12px;
     font-size: 0.75rem;
-    color: #fff;
+    color: rgb(218, 218, 218);
     opacity: 1;
     text-decoration: none;
 }
@@ -1059,4 +1064,16 @@ footer{
 }
 .job-card-detail{
     margin: 0 0 27px;
+}
+footer a{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+}
+.copyright{
+    font-size: .8rem;
+    color: white;
+    text-align: center;
 }
