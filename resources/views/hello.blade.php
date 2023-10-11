@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('headList')
-        <title>ファストライン合同会社</title>
+        <title>ファストライン合同会社｜トップ</title>
         <meta name="description" content="ファストライン合同会社は、古物の取引に特化した企業です。新幹線チケット代理購入サービス’とどきっぷ’を提供し、お客様に特別な体験をお届けします。">
     </head>
     <body>

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('headList')
-        <title>ファストライン合同会社</title>
+        <title>ファストライン合同会社｜お問い合わせ</title>
         <meta name="description" content="自社サービスに関することなどお気軽にお問い合わせください。">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
