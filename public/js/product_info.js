@@ -1,9 +1,3 @@
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const sliderContainer = document.querySelector('.products_index_detail');
     const sliderItems = document.querySelectorAll('.products_detail');
@@ -62,10 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
-
-
-
-
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     const sliderContainer = document.querySelector('.products_index_detail');

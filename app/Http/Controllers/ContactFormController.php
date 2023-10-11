@@ -23,7 +23,7 @@ class ContactFormController extends Controller
             'message' => 'nullable',
         ]);
         // メールを送信
-        Mail::to('yuimaaaru0112@gmail.com')->send(new ContactFormMail($data));
+        Mail::to('fastline.llcompany@gmail.com')->send(new ContactFormMail($data));
 
         // メール送信後のリダイレクト
         return redirect()->route('hello.index'); // 'top' を実際のトップ画面のルート名に変更
@@ -31,8 +31,3 @@ class ContactFormController extends Controller
         // メール送信後の処理を追加できます
     }
 }
-
-
-
-
-
