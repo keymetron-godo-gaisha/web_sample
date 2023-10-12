@@ -13,10 +13,10 @@
                 </div>
                 <div class="footer_top">
                     <ul class="nav">
-                        <li class="footer_text"><a class="footer_a_text" href="#index-about">会社概要</a></li>
-                        <li class="footer_text"><a class="footer_a_text" href="#products_index">製品について</a></li>
-                        <li class="footer_text"><a class="footer_a_text" href="#index-recruit">採用情報</a></li>
-                        <li class="footer_text"><a class="footer_a_text" href="#enquiry_index">お問い合わせ</a></li>
+                        <li class="footer_text"><a class="footer_a_text js-nav-link" href="#index-about">会社概要</a></li>
+                        <li class="footer_text"><a class="footer_a_text js-nav-link" href="#products_index">製品について</a></li>
+                        <li class="footer_text"><a class="footer_a_text js-nav-link" href="#index-recruit">採用情報</a></li>
+                        <li class="footer_text"><a class="footer_a_text js-nav-link" href="#enquiry_index">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
