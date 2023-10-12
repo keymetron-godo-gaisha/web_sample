@@ -7,32 +7,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header js-header">
-                <div class="header-logo">
-                    <a href="/" class="header-logo-link">
-                        <img class="header-logo-img" src="/img/fastline_logo.png">
-                    </a>
-                </div>
-                <div class="header-content show-pc">
-                    <div class="header-nav">
-                        <nav class="nav">
-                            <ul class="nav-list">
-                                <li class="nav-item ">
-                                    <a class="nav-link js-nav-link" href="/#company">会社概要</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link js-nav-link" href="/#products_index">弊社サービス</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link js-nav-link" href="/#index-recruit">採用情報</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link js-nav-link" href="/#enquiry_index">お問い合わせ</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-            </header>
+            @include('header')
             <div class="vision">
                 <div class="vision-mainpic">
                     <div class="vision-maintext">
