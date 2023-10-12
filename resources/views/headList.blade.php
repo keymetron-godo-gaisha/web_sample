@@ -21,7 +21,7 @@
               });
 </script>
 
-<link rel="icon" href="/img/fastline_logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
