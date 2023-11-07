@@ -1,8 +1,89 @@
 @charset "UTF-8";
+
 /*----------------------------
 /SP用CSS
 /*----------------------------*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,6 +91,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+
 /* body{
     min-width: 767px;
 } */
@@ -32,61 +114,79 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
 }
+
 .header-logo {
     /* display: flex; */
     align-items: center;
     text-align: center;
 }
+
 .header-logo-img {
     width: 25%;
 }
+
 .header-logo-link {
     display: inline-block;
     transition: opacity 0.5s ease-in-out;
 }
+
 .header-logo-text {
     font-size: 12px;
     padding: 0 0 0 20px;
     margin-top: -5px;
 }
+
 .header-nav {
     position: relative;
     top: -3px;
     /* padding-right: 10%; */
 }
+
 .nav {
     position: relative;
     z-index: 2;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
+
 .nav-item {
     margin: 0 0 0 13px;
     display: inline-block;
     position: relative;
 }
+
 .nav-link {
     font-size: 15px;
     color: #37383C;
     font-weight: 600;
 }
+
 a {
     text-decoration: none;
     color: #37383C;
 }
-.tel,.footer_a_text{
-    color:#a1a1a1;
+
+.tel,
+.footer_a_text {
+    color: #b9b9b9;
 }
-.footer_a_text:hover, .tel:hover{
-    color:white;
+
+.footer_a_text:hover,
+.tel:hover {
+    color: white;
 }
+
 .banner {
     padding: 0 60px;
 }
+
 .hidden {
     display: none;
 }
+
 .banner-content {
     position: relative;
     overflow: hidden;
@@ -99,7 +199,7 @@ a {
 /*----------------------------
 /ここからメインのとこ！
 /*----------------------------*/
-.main_toppic{
+.main_toppic {
     /* position: relative; */
     background-image: url(/img/webtop.png);
     background-position: left center;
@@ -111,7 +211,7 @@ a {
     margin-top: 120px;
 }
 
-.main_subpic{
+.main_subpic {
     position: relative;
     background-image: url(/img/index-aboutpic.png);
     background-position: left center;
@@ -121,7 +221,8 @@ a {
     overflow: hidden;
     height: 90px;
 }
-.main_title{
+
+.main_title {
     font-family: var(--font-serif-jp);
     font-size: 22px;
     font-weight: 500;
@@ -133,6 +234,7 @@ a {
     color: #fff;
     font-family: "ヒラギノ明朝 ProN";
 }
+
 .banner-scroll {
     position: absolute;
     /* right: 15%; */
@@ -150,27 +252,31 @@ a {
 /*----------------------------
 /ここから企業理念
 /*----------------------------*/
-.index-management{
+.index-management {
     padding: 0px 0 30px 0;
     /* display: flex; */
     margin: 25px 0;
     background-color: #d8dce5;
 }
-.index-management-content{
+
+.index-management-content {
     padding: 40px 3.57vw 30px 3.57vw;
 }
+
 .index-management-title {
-        color: #092f8c;
-        font-weight: bold;
-        font-size: 1.7rem;
-        margin-bottom: 30px;
+    color: #092f8c;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
 }
+
 .index-management-detail {
     color: #092f8c;
     font-weight: bold;
     font-size: large;
     margin-bottom: 30px;
 }
+
 /* <!-- ▲企業理念 --> */
 
 /*----------------------------
@@ -182,16 +288,19 @@ a {
     margin-bottom: 50px;
 
 }
-.index_bg{
+
+.index_bg {
     background-position: center center;
     background-size: cover;
     flex: 0 0 51.32%;
     order: 2;
 
 }
+
 .index-about-wrapper {
     padding: 0 35px;
 }
+
 .index-about-content {
     min-height: 350px;
     justify-content: space-between;
@@ -204,46 +313,56 @@ a {
     padding-bottom: 10%;
     padding-top: 10%;
 }
+
 .index-about-text-content {
     height: 50%;
 }
-.index-about-heading{
+
+.index-about-heading {
     color: #092f8c;
     font-weight: bold;
     font-size: 1.7rem;
 }
-.index-about-heading{
+
+.index-about-heading {
     font-weight: bold;
 }
 
 table {
-    border-collapse: collapse; /* ボーダーが重ならないように設定 */
-    width: 90%; /* 表の幅を100%に設定 */
+    border-collapse: collapse;
+    /* ボーダーが重ならないように設定 */
+    width: 90%;
+    /* 表の幅を100%に設定 */
 }
 
 
-th, td {
-    border: 1px solid #000; /* ボーダーの幅、スタイル、色を設定 */
-    padding: 8px; /* セル内の余白を設定 */
+th,
+td {
+    border: 1px solid #000;
+    /* ボーダーの幅、スタイル、色を設定 */
+    padding: 8px;
+    /* セル内の余白を設定 */
 }
 
 th {
-    background-color: #f2f2f2; /* ヘッダーセルの背景色を設定 */
+    background-color: #f2f2f2;
+    /* ヘッダーセルの背景色を設定 */
 }
-table{
+
+table {
     width: 100%;
     border-collapse: collapse;
-  }
+}
 
-  table tr{
+table tr {
     border-bottom: solid 2px white;
-  }
+}
 
-  table tr:last-child{
+table tr:last-child {
     border-bottom: none;
-  }
+}
 
-  table th{
+table th {
     position: relative;
     text-align: left;
     width: 33%;
@@ -251,28 +370,29 @@ table{
     color: white;
     text-align: center;
     padding: 10px 0;
-  }
+}
 
-  table th:after{
+table th:after {
     display: block;
     content: "";
     width: 0px;
     height: 0px;
     position: absolute;
-    top:calc(50% - 10px);
-    right:-10px;
+    top: calc(50% - 10px);
+    right: -10px;
     border-left: 10px solid #092f8c;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-  }
+}
 
-  table td{
+table td {
     text-align: left;
     width: 70%;
     text-align: center;
     background-color: #eee;
     padding: 10px 0;
-  }
+}
+
 .is-active .index-about-image-item:first-of-type {
     -webkit-animation: fade-in 0.5s 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: fade-in 0.5s 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -286,58 +406,66 @@ table{
     -webkit-animation: fade-in 1s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: fade-in 1s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 /* <!-- ▲トップ画面 --> */
 /* <!-- ▼製品紹介 --> */
-.products_index{
+.products_index {
     max-width: 768px;
     /* padding-bottom: 70px; */
 
 }
-.products{
+
+.products {
 
     /* padding: 0 40px 40px; */
 }
 
-.products_index_title{
+.products_index_title {
     display: flex;
     align-items: center;
     height: 74px;
     font-size: 20px;
     line-height: 14px;
     letter-spacing: 0.5em;
-    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 500;
     margin-left: 5%;
     font-size: 24px;
     color: #092f8c;
 }
-.products_detail_format{
+
+.products_detail_format {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: 1;
     display: flex;
     transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box;
     margin-bottom: 15%;
 }
-.products_detail{
+
+.products_detail {
     /* margin-right: 3%; */
 }
-.products_pic{
+
+.products_pic {
     /* margin-bottom: 20px; */
     border-radius: 4px;
     /* width: 200px; */
 }
-.products_image{
+
+.products_image {
     width: 65%;
 }
-.products_title{
+
+.products_title {
     font-size: 12px;
     line-height: 14px;
 }
-.products_subtitle{
+
+.products_subtitle {
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -350,7 +478,8 @@ table{
     /* margin: 0 40px 40px; */
     background-color: #d8dce5;
 }
-.products_bg{
+
+.products_bg {
     /* background-color: #ffffff; */
     background-image: url(/img/todokippu1.png);
     height: 220px;
@@ -362,11 +491,13 @@ table{
     max-width: 51.32%;
     order: 2; */
 }
+
 .products-about-wrapper {
     /* margin: 0 auto;
     width: 1140px;
     padding: 0 30px; */
 }
+
 .products-about-content {
     /* display: flex; */
     flex-direction: column;
@@ -378,42 +509,58 @@ table{
     order: 1;
     margin-bottom: 50px;
 }
-.products-about-heading{
+
+.products-about-heading {
     color: #092f8c;
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 30px
 }
-.products-about-detail{
+
+.products-about-detail {
     margin-bottom: 50px
 }
+
 #prev-button,
 #next-button {
-    background-color: gray; /* ボタンの背景色をグレーに設定 */
-    color: white; /* テキスト色を白に設定 */
-    padding: 10px 20px; /* パディングを調整 */
-    border: none; /* ボーダーを削除 */
-    cursor: pointer; /* カーソルをポインターに変更 */
+    background-color: gray;
+    /* ボタンの背景色をグレーに設定 */
+    color: white;
+    /* テキスト色を白に設定 */
+    padding: 10px 20px;
+    /* パディングを調整 */
+    border: none;
+    /* ボーダーを削除 */
+    cursor: pointer;
+    /* カーソルをポインターに変更 */
     /* position: absolute; 絶対位置指定 */
-    top: 50%; /* 上端を中央に配置 */
-    transform: translateY(-50%); /* 垂直方向に中央揃え */
+    top: 50%;
+    /* 上端を中央に配置 */
+    transform: translateY(-50%);
+    /* 垂直方向に中央揃え */
 }
+
 #prev-button {
-    left: 10px; /* 左側に配置 */
+    left: 10px;
+    /* 左側に配置 */
 }
 
 #next-button {
-    right: 10px; /* 右側に配置 */
+    right: 10px;
+    /* 右側に配置 */
 }
 
 .products_detail {
-    display: none; /* 商品詳細を初期状態で非表示にする */
+    display: none;
+    /* 商品詳細を初期状態で非表示にする */
 }
-.product_slide{
+
+.product_slide {
     text-align: center;
     margin-bottom: 50px;
 }
-.products-action-push{
+
+.products-action-push {
     width: 180px;
     height: 53px;
     border: 1px solid #092f8c;
@@ -428,6 +575,7 @@ table{
     transition: all .5s;
     font-size: medium;
 }
+
 /* @media screen and (max-width: 768px) {
     .products_detail {
         display: none; /* 商品詳細を初期状態で非表示にする
@@ -439,25 +587,30 @@ table{
 
 /* <!-- ▲製品紹介 --> */
 /* <!-- ▼新着情報 --> */
-#info{
+#info {
     /* background-color: #C8E1F6; */
     /* height: 500px; */
     /* margin-bottom: 70px; */
 
 }
+
 #info .in_bdy {
     width: 70%;
     margin: 25px 25px 50px 25px;
-}#info .in_bdy h2 {
+}
+
+#info .in_bdy h2 {
     font-size: 24px;
     color: #092f8c;
     margin-bottom: 15px;
     font-weight: normal;
     padding-top: 30px;
 }
+
 .new_info {
     margin: 0 auto;
 }
+
 .info_list {
     align-items: center;
     -ms-flex-align: center;
@@ -474,23 +627,27 @@ table{
     width: 100%;
     margin: 0 auto;
 }
+
 .info_title {
     /* display: flex; */
     /* margin-left: 15%; */
     margin-bottom: 15px;
-        /* visibility: hidden; */
+    /* visibility: hidden; */
 }
+
 .schedule {
     /* padding: 1em 2em 1em 3em; */
     margin-bottom: 5px;
     color: #7e88a1;
     /* border-bottom: 1px solid #707070; */
 }
+
 .qa-006 {
     max-width: 500px;
     margin-bottom: 5px;
     border-bottom: 1px solid #707070;
 }
+
 .qa-006 summary {
     display: flex;
     justify-content: space-between;
@@ -501,6 +658,7 @@ table{
     cursor: pointer;
     color: #092f8c;
 }
+
 .qa-006 p {
     position: relative;
     margin: 0;
@@ -509,44 +667,62 @@ table{
     color: #707070;
     transition: transform .5s, opacity .5s;
 }
+
 #load-more-container {
     text-align: center;
-    position: relative; /* 要素を相対位置に設定 */
+    position: relative;
+    /* 要素を相対位置に設定 */
     margin-top: 37px;
-  }
+}
 
-  #load-more-button, #close-more-button {
+#load-more-button,
+#close-more-button {
     background-color: gray;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    position: absolute; /* ボタンを絶対位置に設定 */
-    left: 50%; /* 水平方向の位置を中央に設定 */
-    transform: translateX(-50%); /* 水平方向に中央揃え */
+    position: absolute;
+    /* ボタンを絶対位置に設定 */
+    left: 50%;
+    /* 水平方向の位置を中央に設定 */
+    transform: translateX(-50%);
+    /* 水平方向に中央揃え */
     display: inline-block;
     transition: background-color 0.3s;
-    border-radius: 4px; /* ボタンを角丸にする */
-  }
+    border-radius: 4px;
+    /* ボタンを角丸にする */
+}
 
-  #load-more-button:hover, #close-more-button:hover {
+#load-more-button:hover,
+#close-more-button:hover {
     background-color: darkgray;
-  }
-  #load-more-button {
-    background-color: #808080; /* グレーの背景色 */
-    color: #fff; /* テキスト色を白に設定 */
-    padding: 10px 20px; /* パディングを調整してボタンのサイズを設定 */
-    border: none; /* ボーダーを削除 */
-    cursor: pointer; /* マウスポインターを手の形に変更 */
-    border-radius: 4px; /* ボタンを角丸にする */
-  }
+}
 
-  #load-more-button:hover {
-    background-color: #606060; /* マウスオーバー時の背景色を少し暗めにする */
-  }
-  .info_title:nth-child(n+5) {
+#load-more-button {
+    background-color: #808080;
+    /* グレーの背景色 */
+    color: #fff;
+    /* テキスト色を白に設定 */
+    padding: 10px 20px;
+    /* パディングを調整してボタンのサイズを設定 */
+    border: none;
+    /* ボーダーを削除 */
+    cursor: pointer;
+    /* マウスポインターを手の形に変更 */
+    border-radius: 4px;
+    /* ボタンを角丸にする */
+}
+
+#load-more-button:hover {
+    background-color: #606060;
+    /* マウスオーバー時の背景色を少し暗めにする */
+}
+
+.info_title:nth-child(n+5) {
     display: none;
-  }
+}
+
 /* <!-- ▲新着情報 --> */
 
 /* <!-- ▼お問い合わせ情報 --> */
@@ -557,22 +733,26 @@ table{
     background-size: cover;
     background-position: center center;
 }
-.enquiry{
+
+.enquiry {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 
 }
+
 .enquiry_text {
-   color: #092f8c;
-   font-weight: bold;
-   font-size: 1rem;
+    color: #092f8c;
+    font-weight: bold;
+    font-size: 1rem;
 }
-.enquiry_content{
+
+.enquiry_content {
     /* margin-top: 40px */
 }
-.enquiry_contact{
+
+.enquiry_contact {
     width: 180px;
     height: 53px;
     background: #092f8c;
@@ -586,11 +766,13 @@ table{
     font-weight: bold;
     transition: all .5s;
 }
-.enquiry_title{
+
+.enquiry_title {
     box-sizing: inherit;
 
 }
-.enquiry_list{
+
+.enquiry_list {
     lign-items: center;
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -605,6 +787,7 @@ table{
     position: relative;
     margin: 0 auto;
 }
+
 /* <!-- ▲お問い合わせ情報 --> */
 
 /* <!-- ▼採用情報 --> */
@@ -614,7 +797,8 @@ table{
     background-color: #d8dce5;
     margin-bottom: 50px;
 }
-.recruit_bg{
+
+.recruit_bg {
     /* background-color: #ffffff; */
     background-image: url(/img/recruit3_bg.png);
     height: 220px;
@@ -625,11 +809,13 @@ table{
     order: 2;
 
 }
+
 .index-about-wrapper {
     /* margin: 0 auto; */
 
     padding: 0 35px;
 }
+
 .index-recruit-content {
     /* padding: 108px 68px 85px 120px; */
     position: relative;
@@ -647,23 +833,27 @@ table{
 .index-recruit-text-content {
     height: 50%;
 }
-.index-recruit-heading{
+
+.index-recruit-heading {
     color: #092f8c;
     font-weight: bold;
     font-size: 1.7rem;
     /* margin-left: 10%; */
     font-weight: bold;
 }
-.index-recruit-detail{
+
+.index-recruit-detail {
     /* margin-left: 10%; */
 }
-.recruit-detail-more{
+
+.recruit-detail-more {
     margin-top: 45px;
     margin-bottom: 20px;
     font-size: 1.6rem;
     text-align: center;
 }
-.recruit-detail-action{
+
+.recruit-detail-action {
     width: 180px;
     height: 53px;
     border: 1px solid #092f8c;
@@ -678,11 +868,13 @@ table{
     transition: all .5s;
     /* margin-top: 120px; */
 }
-.recruit-action-push{
+
+.recruit-action-push {
     font-size: 1.2rem;
     font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
 }
+
 /* <!-- ▲採用情報 --> */
 
 
@@ -690,32 +882,37 @@ table{
 /*----------------------------
 /ここからフッター
 /*----------------------------*/
-footer{
+footer {
     position: relative;
     background-color: #252a36;
     z-index: 100;
     margin-top: 10px;
 }
-.footer_top{
+
+.footer_top {
     /* margin-top: 15px; */
     border-top: 1px solid #82878d;
     padding: 1rem;
 }
-.footer_frame{
+
+.footer_frame {
     padding: 0 1rem 1rem 1rem;
 }
-.footer_company{
+
+.footer_company {
     max-width: 1280px;
     /* width: 100%; */
     margin: 0 auto;
     /* padding: 0 40px; */
 }
-.footer_menu{
+
+.footer_menu {
     width: 100%;
     /* display: flex;
     justify-content: space-between; */
 }
-.footer_menu_service{
+
+.footer_menu_service {
     /* width: 51%; */
     /* display: flex; */
     /* justify-content: space-between; */
@@ -725,7 +922,8 @@ footer{
     text-align: center;
 
 }
-.footer_menu_linklists{
+
+.footer_menu_linklists {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -733,11 +931,13 @@ footer{
     margin: 0;
     padding-left: 0;
 }
-.footer_menu_text{
+
+.footer_menu_text {
     display: inline-block;
     position: relative;
     color: #FFF;
 }
+
 .footer_menu_linklists_item a {
     display: inline-block;
     padding: 16px;
@@ -747,22 +947,31 @@ footer{
     opacity: 1;
     text-decoration: none;
 }
-.footer-logo-img{
+
+.footer-logo-img {
     width: 33%;
 }
-.footer_a_text{
-    color: #fff;
+
+.footer_a_text {
+    color: #b9b9b9;
     padding: 0 15px;
-    border-right: 1px solid #fff;
 }
-.footer_top .nav{
+
+.footer_top .nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-.footer_address{
+}
+
+.footer_top .nav:nth-child(1) a,
+.footer_top .nav:nth-child(2) a {
+    border-right: 1px solid #fff;
+}
+
+.footer_address {
     display: none;
 }
+
 /* footer ul{
     width: 660px;
     margin: 0 auto;
@@ -845,10 +1054,10 @@ footer{
 /*----------------------------
 /ここからお問い合わせフォーム
 /*----------------------------*/
-.inquiry{
+.inquiry {
     align-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.0);
+    background: rgba(0, 0, 0, 0.0);
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -858,7 +1067,8 @@ footer{
     width: 100%;
     max-width: 100%;
 }
-.inquiry-title{
+
+.inquiry-title {
     color: #333;
     font-family: var(--s-font-be804a3a);
     font-size: 20px;
@@ -873,10 +1083,11 @@ footer{
     justify-content: center;
     margin: 80px 0px 40px 0px;
 }
-.inquiry-form{
+
+.inquiry-form {
     align-content: flex-end;
     align-items: flex-end;
-    background: rgba(0,0,0,0.0);
+    background: rgba(0, 0, 0, 0.0);
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -886,8 +1097,9 @@ footer{
     max-width: 100%;
     margin: 0 auto;
 }
-.inquiry-content{
-    background: rgba(0,0,0,0.0);
+
+.inquiry-content {
+    background: rgba(0, 0, 0, 0.0);
     border-radius: 0px;
     flex: 1;
     height: auto;
@@ -897,72 +1109,86 @@ footer{
     width: 100%;
     max-width: 100%;
 }
-.inquiry-lastname{
+
+.inquiry-lastname {
     width: 92%;
     /* float: left; */
     margin: 0 auto;
 }
-#label-lastname{
+
+#label-lastname {
     color: #092f8c;
 }
-.label-lastname .span{
+
+.label-lastname .span {
     font-family: Noto Sans JP;
 }
-.lastname-required{
+
+.lastname-required {
     color: red;
 }
-.required-input{
+
+.required-input {
     /* padding: 0 15px; */
     max-width: 100%;
     width: 99%;
     height: 40px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 15px;
 }
-.inquiry-firstname{
+
+.inquiry-firstname {
     width: 92%;
     /* float: left; */
     margin-bottom: 18px;
     margin: 0 auto;
 
 }
-#label-firstname{
+
+#label-firstname {
     color: #092f8c;
     font-family: Noto Sans JP;
 }
-.firstname-required{
+
+.firstname-required {
     color: red;
     font-family: Noto Sans JP;
 }
-.label-lastname .span{
+
+.label-lastname .span {
     font-family: Noto Sans JP;
 }
-.required-message{
+
+.required-message {
     margin-bottom: 18px;
     margin-left: 4%;
 }
-.label-message{
+
+.label-message {
     color: #092f8c;
     font-family: Noto Sans JP;
 }
-.required-input-message{
+
+.required-input-message {
     max-width: 100%;
     width: 95%;
     height: 70px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
 }
-.send-submit-action{
+
+.send-submit-action {
     text-align: center;
     margin-top: 18px;
     margin-bottom: 18px;
     padding: 17px 0px;
 
 }
-.send-submit-push{
+
+.send-submit-push {
     background: #092f8c;
     border-color: #092f8c;
     color: #FFFFFF;
@@ -974,15 +1200,18 @@ footer{
     padding: 12px 24px;
 
 }
-.input-text{
+
+.input-text {
     width: 99%;
     height: 40px;
 }
-.input-text-message{
+
+.input-text-message {
     width: 99%;
     height: 135px;
 }
-.required-consent-frame{
+
+.required-consent-frame {
     overflow: scroll;
     height: 250px;
     border: 1px solid;
@@ -993,23 +1222,27 @@ footer{
     margin-left: 4%;
     margin-top: 100px;
 }
-.required-privacy{
+
+.required-privacy {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-.required-privacy-title{
+
+.required-privacy-title {
     font-size: x-large;
     font-weight: bold;
 }
-.required-privacy-subtitle{
+
+.required-privacy-subtitle {
     font-size: large;
     font-weight: bold;
 }
+
 /*----------------------------
 /ここから採用ページ
 /*----------------------------*/
-.vision-mainpic{
+.vision-mainpic {
     position: fixed;
     height: 300px;
     /* background-image: url(/img/recruit2_bg.png); */
@@ -1019,7 +1252,8 @@ footer{
     z-index: 1;
     margin-top: 90px;
 }
-.vision-maintext{
+
+.vision-maintext {
     position: absolute;
     top: auto;
     bottom: 45%;
@@ -1034,18 +1268,21 @@ footer{
     /* transform: translate(100%, 0); */
 
 }
-.vision-maintitle{
+
+.vision-maintitle {
     color: #092f8c;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 30px;
     padding-top: 122px;
 }
-.job-aout{
+
+.job-aout {
     padding: 80px 10px;
 
 }
-.job-about-title{
+
+.job-about-title {
     font-size: 24px;
     padding: 0 0 10px;
     border-bottom: 2px solid #092f8c;
@@ -1053,16 +1290,19 @@ footer{
     width: -moz-fit-content;
     margin: 0 auto;
 }
-.job-about-detail{
+
+.job-about-detail {
     margin: 40px 0 0;
 
 }
-.job-card{
+
+.job-card {
     background-color: #d8dce5;
     padding: 15px;
     margin: 0 0 20px;
 }
-.job-card-title{
+
+.job-card-title {
     font-size: 18px;
     line-height: 24px;
     padding: 0 0 3px;
@@ -1073,10 +1313,12 @@ footer{
     font-size: 17px;
     line-height: 23px;
 }
-.job-card-detail{
+
+.job-card-detail {
     margin: 0 0 27px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     color: white;
     font-size: 12px;
