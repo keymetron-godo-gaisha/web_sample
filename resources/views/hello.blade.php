@@ -31,7 +31,7 @@
                         <h2>■NEWS</h2>
                         <ul class="new_info">
                             <li class="info_list">
-                                <div class="info_title">
+                                {{-- <div class="info_title">
                                     <div class="schedule">2023/11/1</div>
                                     <div class="info_detail">
                                         <details class="qa-006">
@@ -42,7 +42,7 @@
                                             </p>
                                         </details>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="info_title">
                                     <div class="schedule">2023/10/1</div>
                                     <div class="info_detail">
@@ -83,7 +83,8 @@
                             </tr>
                             <tr>
                                 <th>電話番号</th>
-                                <td>080-1742-0698</td>
+                                <td>03-6812-1535</td>
+                                {{-- <td>080-1742-0698</td> --}}
                             </tr>
                             <tr>
                                 <th>メールアドレス</th>

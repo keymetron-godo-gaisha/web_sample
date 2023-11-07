@@ -8,7 +8,7 @@
                     <h5>ファストライン合同会社</h5>
                     <div class="address">
                         <p>〒171-0014 <br>東京都豊島区池袋2-17-8</p>
-                        <a href="tel:8017420698" class="tel">080-1742-0698 </a>
+                        <a href="tel:+81368121535" class="tel">03-6812-1535 </a>
                     </div>
                 </div>
                 <div class="footer_top">
