@@ -75,6 +75,12 @@ a {
     text-decoration: none;
     color: #37383C;
 }
+.tel,.footer_a_text{
+    color:#a1a1a1;
+}
+.footer_a_text:hover, .tel:hover{
+    color:white;
+}
 .banner {
     padding: 0 60px;
 }
@@ -99,7 +105,7 @@ a {
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     overflow: hidden;
     height: 240px;
     margin-top: 120px;
@@ -111,7 +117,7 @@ a {
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     overflow: hidden;
     height: 90px;
 }
@@ -145,7 +151,7 @@ a {
 /ここから企業理念
 /*----------------------------*/
 .index-management{
-    padding: 0px 0 30px 0; 
+    padding: 0px 0 30px 0;
     /* display: flex; */
     margin: 25px 0;
     background-color: #d8dce5;
@@ -171,17 +177,17 @@ a {
 /ここから会社概要
 /*----------------------------*/
 .index-about {
-    
+
     background-color: #d8dce5;
     margin-bottom: 50px;
-    
+
 }
 .index_bg{
     background-position: center center;
     background-size: cover;
     flex: 0 0 51.32%;
     order: 2;
-    
+
 }
 .index-about-wrapper {
     padding: 0 35px;
@@ -228,15 +234,15 @@ table{
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   table tr{
     border-bottom: solid 2px white;
   }
-  
+
   table tr:last-child{
     border-bottom: none;
   }
-  
+
   table th{
     position: relative;
     text-align: left;
@@ -246,7 +252,7 @@ table{
     text-align: center;
     padding: 10px 0;
   }
-  
+
   table th:after{
     display: block;
     content: "";
@@ -259,7 +265,7 @@ table{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
-  
+
   table td{
     text-align: left;
     width: 70%;
@@ -285,10 +291,10 @@ table{
 .products_index{
     max-width: 768px;
     /* padding-bottom: 70px; */
-    
+
 }
 .products{
-    
+
     /* padding: 0 40px 40px; */
 }
 
@@ -424,10 +430,10 @@ table{
 }
 /* @media screen and (max-width: 768px) {
     .products_detail {
-        display: none; /* 商品詳細を初期状態で非表示にする 
+        display: none; /* 商品詳細を初期状態で非表示にする
     }
     .products_detail:first-child {
-        display: block; /* 1つ目の商品詳細を表示 
+        display: block; /* 1つ目の商品詳細を表示
     }
 } */
 
@@ -437,7 +443,7 @@ table{
     /* background-color: #C8E1F6; */
     /* height: 500px; */
     /* margin-bottom: 70px; */
-    
+
 }
 #info .in_bdy {
     width: 70%;
@@ -508,7 +514,7 @@ table{
     position: relative; /* 要素を相対位置に設定 */
     margin-top: 37px;
   }
-  
+
   #load-more-button, #close-more-button {
     background-color: gray;
     color: white;
@@ -522,7 +528,7 @@ table{
     transition: background-color 0.3s;
     border-radius: 4px; /* ボタンを角丸にする */
   }
-  
+
   #load-more-button:hover, #close-more-button:hover {
     background-color: darkgray;
   }
@@ -534,7 +540,7 @@ table{
     cursor: pointer; /* マウスポインターを手の形に変更 */
     border-radius: 4px; /* ボタンを角丸にする */
   }
-  
+
   #load-more-button:hover {
     background-color: #606060; /* マウスオーバー時の背景色を少し暗めにする */
   }
@@ -567,9 +573,9 @@ table{
     /* margin-top: 40px */
 }
 .enquiry_contact{
-    width: 273px;
-    height: 63px;
-    border: 1px solid #8497c6;
+    width: 180px;
+    height: 53px;
+    background: #092f8c;
     color: #fff !important;
     display: inline-flex;
     justify-content: center;
@@ -617,16 +623,16 @@ table{
     background-size: cover;
     flex: 0 0 51.32%;
     order: 2;
-    
+
 }
 .index-about-wrapper {
     /* margin: 0 auto; */
-    
+
     padding: 0 35px;
 }
 .index-recruit-content {
     /* padding: 108px 68px 85px 120px; */
-    position: relative; 
+    position: relative;
     min-height: 350px;
     /* display: flex; */
     justify-content: space-between;
@@ -785,7 +791,7 @@ footer{
   }
   footer .footer_bottom h5{
     font-weight: normal;
-    font-size: 20px; 
+    font-size: 20px;
   }
   footer .footer_bottom .address{
     line-height: 1.6;
@@ -799,7 +805,7 @@ footer{
 
   .footer_top{
     margin-top: 50px;
-    
+
   }
   .footer_top .nav{
     display: flex;
@@ -828,7 +834,7 @@ footer{
     height: 80px;
     background-color: #252a36;
     color: #FFF;
-    
+
 }
 #homeFooter > .vessel {
     display: table;
@@ -920,7 +926,7 @@ footer{
     /* float: left; */
     margin-bottom: 18px;
     margin: 0 auto;
-    
+
 }
 #label-firstname{
     color: #092f8c;
@@ -1069,4 +1075,9 @@ footer{
 }
 .job-card-detail{
     margin: 0 0 27px;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    font-size: 12px;
 }
