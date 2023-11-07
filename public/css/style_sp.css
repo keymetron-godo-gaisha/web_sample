@@ -963,8 +963,8 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer_top .nav:nth-child(1) a,
-.footer_top .nav:nth-child(2) a {
+.footer_text:nth-child(1) a,
+.footer_text:nth-child(2) a {
     border-right: 1px solid #fff;
 }
 
