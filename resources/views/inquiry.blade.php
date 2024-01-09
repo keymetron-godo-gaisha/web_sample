@@ -178,4 +178,34 @@
                     });
                 });
     </script>
+    <script>
+        document.getElementById("myForm").addEventListener('submit', onSubmit);
+
+       function onSubmit(e)
+       {
+         e.preventDefault();
+         grecaptcha.ready(function()
+         {
+           grecaptcha.execute('6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q', {action: 'submit'}).then(function(token)
+           {
+             var recaptchaToken = document.getElementById('recaptchaToken');
+             recaptchaToken.value = token;
+             document.getElementById("myForm").submit();
+           });
+         });
+       }
+        // function onClick(e) {
+        //   e.preventDefault();
+        //   grecaptcha.enterprise.ready(async () => {
+        //     const token = await grecaptcha.enterprise.execute('6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q', {action: 'send.inquiry'});
+        //   });
+        // }
+        // grecaptcha.ready(function () {
+        //   grecaptcha.execute("6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q", {action: "send.inquiry"}).then(function(token) {
+        //     var recaptchaResponse = document.getElementById("recaptchaResponse");
+        //     recaptchaResponse.value = token;
+        //   });
+        // });
+
+      </script>
 </html>
