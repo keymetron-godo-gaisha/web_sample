@@ -34,6 +34,7 @@ class ContactFormController extends Controller
                   return redirect()->route('top');
             } else {
               echo "認証エラー";
+              return redirect()->route('top');
             }
         } else {
             echo "不正アクセス";
