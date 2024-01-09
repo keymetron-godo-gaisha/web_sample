@@ -184,40 +184,40 @@
             'sitekey' : '6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU'
             });
         };
-       function onSubmit(e)
-       {
-         e.preventDefault();
-        // How this code snippet works:
-        // This logic overwrites the default behavior of `grecaptcha.ready()` to
-        // ensure that it can be safely called at any time. When `grecaptcha.ready()`
-        // is called before reCAPTCHA is loaded, the callback function that is passed
-        // by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
-        // loaded.
-        if(typeof grecaptcha === 'undefined') {
-            grecaptcha = {};
-        }
-        grecaptcha.ready = function(cb){
-            if(typeof grecaptcha === 'undefined') {
-            // window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
-            // configuration. By default, any functions listed in its 'fns' property
-            // are automatically executed when reCAPTCHA loads.
-            const c = '___grecaptcha_cfg';
-            window[c] = window[c] || {};
-            (window[c]['fns'] = window[c]['fns']||[]).push(cb);
-            } else {
-            cb();
-            }
-        }
-         grecaptcha.ready(function()
-         {
-           grecaptcha.execute('6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU', {action: 'submit'}).then(function(token)
-           {
-             var recaptchaToken = document.getElementById('recaptchaToken');
-             recaptchaToken.value = token;
-             document.getElementById("myForm").submit();
-           });
-         });
-       }
+    //    function onSubmit(e)
+    //    {
+    //      e.preventDefault();
+    //     // How this code snippet works:
+    //     // This logic overwrites the default behavior of `grecaptcha.ready()` to
+    //     // ensure that it can be safely called at any time. When `grecaptcha.ready()`
+    //     // is called before reCAPTCHA is loaded, the callback function that is passed
+    //     // by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
+    //     // loaded.
+    //     if(typeof grecaptcha === 'undefined') {
+    //         grecaptcha = {};
+    //     }
+    //     grecaptcha.ready = function(cb){
+    //         if(typeof grecaptcha === 'undefined') {
+    //         // window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
+    //         // configuration. By default, any functions listed in its 'fns' property
+    //         // are automatically executed when reCAPTCHA loads.
+    //         const c = '___grecaptcha_cfg';
+    //         window[c] = window[c] || {};
+    //         (window[c]['fns'] = window[c]['fns']||[]).push(cb);
+    //         } else {
+    //         cb();
+    //         }
+    //     }
+    //      grecaptcha.ready(function()
+    //      {
+    //        grecaptcha.execute('6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU', {action: 'submit'}).then(function(token)
+    //        {
+    //          var recaptchaToken = document.getElementById('recaptchaToken');
+    //          recaptchaToken.value = token;
+    //          document.getElementById("myForm").submit();
+    //        });
+    //      });
+    //    }
         // function onClick(e) {
         //   e.preventDefault();
         //   grecaptcha.enterprise.ready(async () => {
