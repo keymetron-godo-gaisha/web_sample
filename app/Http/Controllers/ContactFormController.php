@@ -31,7 +31,7 @@ class ContactFormController extends Controller
 
         $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaToken}");
         $reCAPTCHA = json_decode($verifyResponse);
-
+dd($reCAPTCHA);
         if ($reCAPTCHA->success) {
             // 認証成功時の処理
             // メールを送信

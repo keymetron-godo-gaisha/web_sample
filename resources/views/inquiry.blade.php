@@ -178,7 +178,6 @@
                 });
     </script>
     <script>
-        document.getElementById("myForm").addEventListener('submit', onSubmit);
         var onloadCallback = function() {
             grecaptcha.render('html_element', {
             'sitekey' : '6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU'
