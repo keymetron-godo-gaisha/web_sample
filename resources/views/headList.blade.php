@@ -28,17 +28,17 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q"></script>
 <script>
-  // function onClick(e) {
-  //   e.preventDefault();
-  //   grecaptcha.enterprise.ready(async () => {
-  //     const token = await grecaptcha.enterprise.execute('6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q', {action: 'send.inquiry'});
-  //   });
-  // }
-  grecaptcha.ready(function () {
-    grecaptcha.execute("6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q", {action: "send.inquiry"}).then(function(token) {
-      var recaptchaResponse = document.getElementById("recaptchaResponse");
-      recaptchaResponse.value = token;
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q', {action: 'send.inquiry'});
     });
-  });
+  }
+  // grecaptcha.ready(function () {
+  //   grecaptcha.execute("6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q", {action: "send.inquiry"}).then(function(token) {
+  //     var recaptchaResponse = document.getElementById("recaptchaResponse");
+  //     recaptchaResponse.value = token;
+  //   });
+  // });
 
 </script>
