@@ -134,7 +134,7 @@
                     </div>
                     <div class="send-submit">
                         <div class="send-submit-action">
-                            <div class="g-recaptcha" data-sitekey="6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU"></div>
+                            <div class="g-recaptcha" data-sitekey="6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU" data-callback="verifyCallback" data-expired-callback="expiredCallback"></div>
       <br/>
                             <input type="submit" class="send-submit-push" value="プライバシーポリシーに同意して送信する">
                         </div>
