@@ -12,14 +12,18 @@ class ContactFormController extends Controller
 {
     public function sendInquiry(Request $request)
     {
-        $secretKey =  '生成された Scecret Key をこちらに貼り付け';
-        $captchaResponse = $_POST['g-recaptcha-response'];
-
-        // APIリクエスト
-        $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$captchaResponse}");
-
-        // APIレスポンス確認
-        $responseData = json_decode($verifyResponse);
+        if (isset($_POST["recaptchaResponse"]) && !empty($_POST["recaptchaResponse"])) {
+            $secret = "6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q";
+            $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$_POST["recaptchaResponse"]);
+            $reCAPTCHA = json_decode($verifyResponse);
+            if ($reCAPTCHA->success) {
+              echo "認証成功";
+            } else {
+              echo "認証エラー";
+            }
+        } else {
+            echo "不正アクセス";
+        }
         // フォームデータを受け取り、バリデーションを行う
         $data = $request->validate([
             'lastname' => 'required',
@@ -30,13 +34,9 @@ class ContactFormController extends Controller
             'phone' => 'nullable',
             'message' => 'nullable',
         ]);
-        if ($responseData->success) {
             // メールを送信
             Mail::to('fastline.llcompany@gmail.com')->send(new ContactFormMail($data));
             // メール送信後のリダイレクト
             return redirect()->route('top');
-        } else {
-            echo '<h1 class="text-center">Sorry unexpected error occurred, please try again later.</h1>'; // 失敗
-        }
     }
 }

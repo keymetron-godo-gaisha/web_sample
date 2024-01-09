@@ -134,7 +134,8 @@
                     </div>
                     <div class="send-submit">
                         <div class="send-submit-action">
-                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                            {{-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> --}}
+                            <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
                             <input type="submit" class="send-submit-push" value="プライバシーポリシーに同意して送信する">
                         </div>
                     </div>
