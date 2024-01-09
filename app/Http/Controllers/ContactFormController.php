@@ -34,11 +34,11 @@ class ContactFormController extends Controller
                   return redirect()->route('top');
             } else {
               echo "認証エラー";
-              return redirect()->route('top');
+              return redirect()->route('send.inquiry');
             }
         } else {
             echo "不正アクセス";
-            return redirect()->route('top');
+            return redirect()->route('send.inquiry');
         }
     }
 }
