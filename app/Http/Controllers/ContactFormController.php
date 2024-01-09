@@ -33,6 +33,9 @@ class ContactFormController extends Controller
                   // メール送信後のリダイレクト
                   return redirect()->route('top');
             } else {
+                // 失敗
+	$error = $reCAPTCHA->{'error-codes'};
+    dd($error);
               echo "認証エラー";
               return;
             }
