@@ -134,9 +134,8 @@
                     </div>
                     <div class="send-submit">
                         <div class="send-submit-action">
-                            {{-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> --}}
-                            {{-- <input type="hidden" name="recaptchaResponse" id="recaptchaResponse"> --}}
-                            <input type="hidden" name="recaptchaToken" id="recaptchaToken">
+                            <div class="g-recaptcha" data-sitekey="6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU"></div>
+      <br/>
                             <input type="submit" class="send-submit-push" value="プライバシーポリシーに同意して送信する">
                         </div>
                     </div>
@@ -180,7 +179,11 @@
     </script>
     <script>
         document.getElementById("myForm").addEventListener('submit', onSubmit);
-
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+            'sitekey' : '6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU'
+            });
+        };
        function onSubmit(e)
        {
          e.preventDefault();
@@ -207,7 +210,7 @@
         }
          grecaptcha.ready(function()
          {
-           grecaptcha.execute('6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q', {action: 'submit'}).then(function(token)
+           grecaptcha.execute('6LejpUopAAAAAA2aOzApocXRi7vGT6lDhCpoUfrU', {action: 'submit'}).then(function(token)
            {
              var recaptchaToken = document.getElementById('recaptchaToken');
              recaptchaToken.value = token;

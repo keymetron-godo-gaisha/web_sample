@@ -12,36 +12,35 @@ class ContactFormController extends Controller
 {
     public function sendInquiry(Request $request)
     {
-        if (isset($_POST["recaptchaToken"]) && !empty($_POST["recaptchaToken"])) {
-            $secret = "6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q";
-            $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$_POST["recaptchaToken"]);
-            $reCAPTCHA = json_decode($verifyResponse);
-            if ($reCAPTCHA->success) {
-              echo "認証成功";
-              // フォームデータを受け取り、バリデーションを行う
-              $data = $request->validate([
-                  'lastname' => 'required',
-                  'firstname' => 'required',
-                  'company' => 'nullable',
-                  'department' => 'nullable',
-                  'email' => 'required|email',
-                  'phone' => 'nullable',
-                  'message' => 'nullable',
-              ]);
-                  // メールを送信
-                  Mail::to('fastline.llcompany@gmail.com')->send(new ContactFormMail($data));
-                  // メール送信後のリダイレクト
-                  return redirect()->route('top');
-            } else {
-                // 失敗
-	$error = $reCAPTCHA->{'error-codes'};
-    dd($error);
-              echo "認証エラー";
-              return;
-            }
+        // フォームデータを受け取り、バリデーションを行う
+
+        $request->validate([
+            'lastname' => 'required',
+            'firstname' => 'required',
+            'company' => 'nullable',
+            'department' => 'nullable',
+            'email' => 'required|email',
+            'phone' => 'nullable',
+            'message' => 'nullable',
+            'recaptchaToken' => 'required', // 新しく追加
+        ]);
+
+        // reCAPTCHA トークンの検証
+        $recaptchaToken = $request->input('recaptchaToken');
+        $recaptchaSecret = config('services.recaptcha.secret'); // config/services.php に設定しておくと良い
+
+        $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaToken}");
+        $reCAPTCHA = json_decode($verifyResponse);
+
+        if ($reCAPTCHA->success) {
+            // 認証成功時の処理
+            // メールを送信
+            Mail::to('fastline.llcompany@gmail.com')->send(new ContactFormMail($request->all()));
+            // メール送信後のリダイレクトなどの処理
+            return redirect()->route('top');
         } else {
-            echo "不正アクセス";
-            return;
+            // 認証エラー時の処理
+            return redirect()->route('error');
         }
     }
 }
