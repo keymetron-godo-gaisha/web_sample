@@ -27,3 +27,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le5hkopAAAAAGVvpKIplMkOFchmX7esZkVdmf2Q"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
